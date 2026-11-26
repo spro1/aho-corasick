@@ -1,12 +1,20 @@
-# Binaries for programs and plugins
+# Binaries
 *.exe
 *.exe~
 *.dll
 *.so
 *.dylib
 
-# Test binary, build with `go test -c`
+# Test binaries and profiles
 *.test
-
-# Output of the go coverage tool, specifically when used with LiteIDE
 *.out
+*.prof
+coverage.*
+
+# Fuzzing cache
+testdata/fuzz/**/cache/
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
